@@ -125,7 +125,7 @@ public class JaroStrategy implements SimilarityStrategy {
 	 * @param second The second string.
 	 * @return The number of transpositions between the two strings.
 	 */
-    private int transpositions(String first, String second)
+    private static int transpositions(String first, String second)
     {
         int transpositions = 0;
         for (int i = 0; i < first.length(); i++)
