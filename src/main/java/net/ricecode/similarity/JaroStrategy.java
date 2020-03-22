@@ -30,8 +30,11 @@ package net.ricecode.similarity;
  */
 public class JaroStrategy implements SimilarityStrategy {
 
+	/**
+	 * @deprecated Use {@link DiceCoefficientStrategy#transpositions(JaroStrategy,String,String)} instead
+	 */
 	public static int transpositions(JaroStrategy jaroStrategy, String first, String second) {
-		return jaroStrategy.transpositions(first, second);
+		return DiceCoefficientStrategy.transpositions(jaroStrategy, first, second);
 	}
 
 	/**
@@ -77,7 +80,7 @@ public class JaroStrategy implements SimilarityStrategy {
 
         // Calculate the number of transpositions between the two sets
         // of common characters.
-        int transpositions = JaroStrategy.transpositions(this, m1, m2);
+        int transpositions = DiceCoefficientStrategy.transpositions(this, m1, m2);
 
         // Calculate the distance.
         double dist =
@@ -129,7 +132,7 @@ public class JaroStrategy implements SimilarityStrategy {
 	 * @param second The second string.
 	 * @return The number of transpositions between the two strings.
 	 */
-    private int transpositions(String first, String second)
+    int transpositions(String first, String second)
     {
         int transpositions = 0;
         for (int i = 0; i < first.length(); i++)
