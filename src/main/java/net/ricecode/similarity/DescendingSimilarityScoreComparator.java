@@ -31,7 +31,7 @@ import java.util.Comparator;
  * @author Ralph Allan Rice <ralph.rice@gmail.com>
  *
  */
-public class DescendingSimilarityScoreComparator extends ExtractedSuperclass implements Comparator<SimilarityScore>
+public class DescendingSimilarityScoreComparator extends ExtractedSuperclass implements Comparator<SimilarityScore>, ExtractedInterface
 {
 	/**
 	 * Compares two similarity scores.
