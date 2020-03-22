@@ -40,7 +40,7 @@ public class DiceCoefficientStrategy implements SimilarityStrategy {
      * @param second The second string.
      * @return The number of transpositions between the two strings.
      */
-static int transpositions(String first, String second)
+static int transpositionsRenamed(String first, String second)
 {
 int transpositions = 0;
 for (int i = 0; i < first.length(); i++)

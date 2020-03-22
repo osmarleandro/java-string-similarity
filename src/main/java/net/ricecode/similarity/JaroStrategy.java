@@ -73,7 +73,7 @@ public class JaroStrategy implements SimilarityStrategy {
 
         // Calculate the number of transpositions between the two sets
         // of common characters.
-        int transpositions = DiceCoefficientStrategy.transpositions(m1, m2);
+        int transpositions = DiceCoefficientStrategy.transpositionsRenamed(m1, m2);
 
         // Calculate the distance.
         double dist =
