@@ -34,7 +34,27 @@ import java.util.TreeSet;
  */
 public class DiceCoefficientStrategy implements SimilarityStrategy {
 
-	/**
+    /**
+     * Calculates the number of transpositions between two strings.
+     * @param first The first string.
+     * @param second The second string.
+     * @return The number of transpositions between the two strings.
+     */
+static int transpositions(String first, String second)
+{
+int transpositions = 0;
+for (int i = 0; i < first.length(); i++)
+{
+if (first.charAt(i) != second.charAt(i))
+{
+transpositions++;
+}
+}
+transpositions /= 2;
+return transpositions;
+}
+
+    /**
 	 * Calculates the similarity score of objects, where 0.0 implies absolutely no similarity
 	 * and 1.0 implies absolute similarity.
 	 * 
