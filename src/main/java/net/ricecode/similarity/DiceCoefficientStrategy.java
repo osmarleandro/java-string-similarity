@@ -86,7 +86,7 @@ public class DiceCoefficientStrategy implements SimilarityStrategy {
 	}
 
 
-	public static int transpositions(JaroStrategy jaroStrategy, String first, String second) {
+	public static int transpositionsRenamed(JaroStrategy jaroStrategy, String first, String second) {
 		return jaroStrategy.transpositions(first, second);
 	}
 	
