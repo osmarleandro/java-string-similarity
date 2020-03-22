@@ -30,6 +30,10 @@ package net.ricecode.similarity;
  */
 public class JaroStrategy implements SimilarityStrategy {
 
+	public static int transpositions(JaroStrategy jaroStrategy, String first, String second) {
+		return jaroStrategy.transpositions(first, second);
+	}
+
 	/**
 	 * Calculates the similarity score of objects, where 0.0 implies absolutely no similarity
 	 * and 1.0 implies absolute similarity.
@@ -73,7 +77,7 @@ public class JaroStrategy implements SimilarityStrategy {
 
         // Calculate the number of transpositions between the two sets
         // of common characters.
-        int transpositions = transpositions(m1, m2);
+        int transpositions = JaroStrategy.transpositions(this, m1, m2);
 
         // Calculate the distance.
         double dist =
