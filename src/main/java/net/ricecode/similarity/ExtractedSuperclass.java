@@ -4,7 +4,7 @@ import java.util.Comparator;
 
 import net.ricecode.SimilarityScore;
 
-public class ExtractedSuperclass {
+public abstract class ExtractedSuperclass implements CompareInterface {
 
 	public ExtractedSuperclass() {
 		super();
