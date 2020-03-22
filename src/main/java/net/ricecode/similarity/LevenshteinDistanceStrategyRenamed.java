@@ -6,7 +6,7 @@ package net.ricecode.similarity;
  *
  * @see <a href="http://en.wikipedia.org/wiki/Levenshtein_distance">About Levenshtein Distance</a>
 */
-public class LevenshteinDistanceStrategy implements SimilarityStrategy {
+public class LevenshteinDistanceStrategyRenamed implements SimilarityStrategy {
     /**
      * Calculates the similarity score of objects, where 0.0 implies absolutely no similarity
      * and 1.0 implies absolute similarity.
