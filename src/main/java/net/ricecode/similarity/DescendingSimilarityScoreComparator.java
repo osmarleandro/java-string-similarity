@@ -40,10 +40,6 @@ public class DescendingSimilarityScoreComparator extends ExtractedSuperclass imp
 	 * @return a negative integer, zero, or a positive integer as the first score is greater than,
 	 * equal to, or less than the second score. 
 	 */public int compare(SimilarityScore x, SimilarityScore y) {
-		return extracted(x, y);
-	}
-
-	private int extracted(SimilarityScore x, SimilarityScore y) {
 		double first = x.getScore();
 		double second = y.getScore();
 		if (first == second) {
