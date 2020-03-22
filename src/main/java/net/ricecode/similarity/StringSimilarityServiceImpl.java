@@ -36,7 +36,8 @@ import java.util.Collections;
  */
 public class StringSimilarityServiceImpl implements StringSimilarityService {
 
-	private SimilarityStrategy strategy;
+    public static final int RESULT_LIMIT = 4;
+    private SimilarityStrategy strategy;
 
 
     /**

@@ -30,7 +30,6 @@ package net.ricecode.similarity;
  * @see <a href="http://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance">About Jaro-Winkler Distance</a>
  */
 public class JaroWinklerStrategy extends JaroStrategy implements SimilarityStrategy {
-    public static final int RESULT_LIMIT = 4;
     final double DEFAULT_SCALING_FACTOR = 0.1;  // This is the default scaling factor Winkler used.
 
     private double scalingFactor;
@@ -115,7 +114,7 @@ public class JaroWinklerStrategy extends JaroStrategy implements SimilarityStrat
         }
 
         // Limit the result to 4.
-        return result > 4? RESULT_LIMIT : result;
+        return result > 4? StringSimilarityServiceImpl.RESULT_LIMIT : result;
     }
 
 	
