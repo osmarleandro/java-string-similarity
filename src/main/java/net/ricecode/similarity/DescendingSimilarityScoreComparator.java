@@ -35,6 +35,8 @@ import net.ricecode.SimilarityScore;
  */
 public class DescendingSimilarityScoreComparator extends ExtractedSuperclass implements Comparator<SimilarityScore>, ExtractedInterface
 {
+	private double first;
+
 	private int extracted(SimilarityScore x, SimilarityScore y) {
 		double first = x.getScore();
 		double second = y.getScore();
@@ -55,7 +57,7 @@ public class DescendingSimilarityScoreComparator extends ExtractedSuperclass imp
 	 * equal to, or less than the second score. 
 	 */
 	public int compare(SimilarityScore x, SimilarityScore y) {
-		double first = x.getScore();
+		first = x.getScore();
 		double second = y.getScore();
 		if (first == second) {
 			return 0;
