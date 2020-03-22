@@ -34,6 +34,8 @@ import java.util.Comparator;
 public class DescendingSimilarityScoreComparator extends ExtractedSuperclass implements Comparator<SimilarityScore>
 {
 
+    protected double first;
+
     /**
      * Compares two similarity scores.
      * @param x The first score to be compared.
