@@ -26,6 +26,9 @@ package net.ricecode.similarity;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+
+import net.ricecode.SimilarityScore;
+
 import java.util.Collections;
 
 

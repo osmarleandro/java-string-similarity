@@ -27,6 +27,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import net.ricecode.SimilarityScore;
+
 public class SimilarityScoreTest {
 
 	@Test

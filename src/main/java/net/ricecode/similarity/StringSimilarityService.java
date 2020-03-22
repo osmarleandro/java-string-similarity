@@ -26,6 +26,8 @@ package net.ricecode.similarity;
 import java.util.Comparator;
 import java.util.List;
 
+import net.ricecode.SimilarityScore;
+
 /**
  * A service that performs string similarity calculations.
  * @author Ralph Allan Rice <ralph.rice@gmail.com>

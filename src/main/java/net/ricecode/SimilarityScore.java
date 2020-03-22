@@ -21,7 +21,7 @@
  *
  */
 
-package net.ricecode.similarity;
+package net.ricecode;
 
 /**
  * A value object contains a similarity score.

@@ -31,6 +31,8 @@ import java.util.List;
 
 import org.junit.Test;
 
+import net.ricecode.SimilarityScore;
+
 
 public class StringSimilarityServiceImplTest {
 

@@ -25,6 +25,8 @@ package net.ricecode.similarity;
 
 import java.util.Comparator;
 
+import net.ricecode.SimilarityScore;
+
 /**
  * A comparator that allows SimilarityScore to be sorted in
  * ascending order.
