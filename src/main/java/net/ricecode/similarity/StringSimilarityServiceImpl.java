@@ -37,6 +37,7 @@ import java.util.Collections;
 public class StringSimilarityServiceImpl implements StringSimilarityService {
 
 	private SimilarityStrategy strategy;
+	static final double DEFAULT_SCALING_FACTOR = 0.1;  // This is the default scaling factor Winkler used.
 
 
     /**

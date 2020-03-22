@@ -30,7 +30,10 @@ package net.ricecode.similarity;
  * @see <a href="http://en.wikipedia.org/wiki/Jaro%E2%80%93Winkler_distance">About Jaro-Winkler Distance</a>
  */
 public class JaroWinklerStrategy extends JaroStrategy implements SimilarityStrategy {
-	static final double DEFAULT_SCALING_FACTOR = 0.1;  // This is the default scaling factor Winkler used.
+	/**
+	 * @deprecated Use {@link StringSimilarityServiceImpl#DEFAULT_SCALING_FACTOR} instead
+	 */
+	static final double DEFAULT_SCALING_FACTOR = StringSimilarityServiceImpl.DEFAULT_SCALING_FACTOR;  // This is the default scaling factor Winkler used.
 
     private double scalingFactor;
     
@@ -52,7 +55,7 @@ public class JaroWinklerStrategy extends JaroStrategy implements SimilarityStrat
      */
     public JaroWinklerStrategy()
     {
-        this.scalingFactor = DEFAULT_SCALING_FACTOR;
+        this.scalingFactor = StringSimilarityServiceImpl.DEFAULT_SCALING_FACTOR;
     }
 
     /**
