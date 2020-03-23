@@ -25,6 +25,7 @@ package net.ricecode.similarity;
 
 import static org.junit.Assert.*;
 
+import net.ricecode.SimilarityScore;
 import org.junit.Test;
 
 public class SimilarityScoreTest {

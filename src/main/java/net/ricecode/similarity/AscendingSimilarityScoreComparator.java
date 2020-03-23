@@ -23,6 +23,8 @@
 
 package net.ricecode.similarity;
 
+import net.ricecode.SimilarityScore;
+
 import java.util.Comparator;
 
 /**
